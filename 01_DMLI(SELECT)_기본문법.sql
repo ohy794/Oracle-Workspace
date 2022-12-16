@@ -164,6 +164,11 @@ WHERE DEPT_CODE<>'D9';
 --DEPT_CODE ^='D9'; 
 --DEPT_CODE != 'D9';
 
+
+SELECT EMP_NAME, DEPT_CODE, SALARY
+FROM EMPLOYEE
+WHERE (DEPT_CODE = 'D6') AND SALARY >= 3000000
+
 ----------------------- 실습 문제-------------------------------------
 
 --1. EMPLOTEE 테이블에서 급여가 300만원 이상인 사원들의 이름 급여 입사일 조회

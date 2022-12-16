@@ -60,7 +60,7 @@ SELECT INSTR('AABAACAABBAA' , 'B' ,-1 , 0) FROM DUAL;
 -- 자바처럼 0부터가아아니라 1부터 찾는다.
 
 -- EMPLOYEE 테이블에서 EAMIL칼럼에서 @의 위치를 찾아보기
-SELECT EMP_NAME, EMAIL, INSTR (EMAIL , '@') AS "@의 위치"
+SELECT EMP_NAME, EMAIL, INSTR (EMAIL , '3') AS "3의 위치"
 FROM EMPLOYEE;
 
 /*
