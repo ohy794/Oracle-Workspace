@@ -407,7 +407,7 @@ SELECT TO_CHAR(SYSDATE, 'DY'),
 FROM DUAL;
 
 -- 2022년 11월 4일 (금) 포맷으로 적용하기
-SELECT TO_CHAR(SYSDATE, 'YYYY' )||'년' || TO_CHAR(SYSDATE, 'MM' ) ||'월'||
+SELECT TO_CHAR('2021', 'YYYY' )||'년' || TO_CHAR(SYSDATE, 'MM' ) ||'월'||
  TO_CHAR (SYSDATE, 'DD' )|| '일' ||  TO_CHAR(SYSDATE, '(DY)' )
 FROM DUAL;
 
